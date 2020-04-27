@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario de Ingreso</title>
+</head>
+<body>
+	<div style="margin: 100px 0 0 100px">
+		<h2>Ingreso de nuevo alumno</h2>
+	</div>
+	<div style="margin-left: 100px">
+		<form method="post" th:action="@{/formulario}">
+			<table>
+				<tr style="margin: 16px 0 16px 0">
+					<td>Nombres:</td>
+					<td><input type="text" placeholder="Digite sus nombres"
+						style="padding: 6px; width: 300px" name="name" /></td>
+				</tr>
+				<tr>
+					<td>Apellidos:</td>
+					<td><input type="text" placeholder="Digite sus apellidos"
+						style="padding: 6px; width: 300px" name="lname" /></td>
+				</tr>
+				<tr>
+					<td>Fecha de Nacimiento:</td>
+					<td><input type="date"
+						placeholder="Digite fecha de nacimiento"
+						style="padding: 6px; width: 300px" name="birthdate" /></td>
+				</tr>
+				<tr>
+					<td>Lugar de Nacimiento:</td>
+					<td><input type="text"
+						placeholder="Digite lugar de nacimiento"
+						style="padding: 6px; width: 300px;" name="birthplace" /></td>
+				</tr>
+				<tr>
+					<td>Instituto/Colegio</td>
+					<td><input type="text"
+						placeholder="Digite el Instituto o Colegio de procedencia"
+						style="padding: 6px; width: 300px" name="school" /></td>
+				</tr>
+				<tr>
+					<td>Tel&eacute;fono fijo:</td>
+					<td><input type="number"
+						placeholder="Digite su n&uacute;mero de tel&eacute;fono fijo"
+						style="padding: 6px; width: 300px" name="telephone" /></td>
+				</tr>
+				<tr>
+					<td>Tel&eacute;fono m&oacute;vil:</td>
+					<td><input type="number"
+						placeholder="Ingrese su n&uacute;mero de el&eacute;fono m&oacute;vil"
+						style="padding: 6px; width: 300px" name="celphone" /></td>
+				</tr>
+
+				<tr>
+					<td><input style="margin: auto" type="submit"
+						value="Guardar alumno" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
